@@ -1,0 +1,76 @@
+/* Apply a background image to the body */
+body {
+    background: url('images/background.webp') center/cover no-repeat;
+    margin: 0; /* Remove default margins for full-screen background */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    font-family: Arial, sans-serif; /* Optional: Set a font for the body */
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    gap: 10px; /* Spacing between divs */
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for each grid item */
+.grid-item {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc; /* Border around each div */
+    background-color: #000; /* Default background color */
+}
+
+.eighth-grid-cell {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Retro ID Card */
+.id-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 3px dashed #fe5dc4; /* Dashed border for retro style */
+    background-color: #282828; /* Dark retro background */
+    padding: 15px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular profile image */
+    border: 3px solid #fe5dc4; /* Green border for the profile picture */
+    margin-bottom: 10px;
+}
+
+/* User info styling */
+.user-info p {
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+.user-info span {
+    color: #e96bc5; /* Highlighted green text */
+    font-weight: bold;
+}
+
+/* Username, email, and genre styling */
+.username,
+.email,
+.genre {
+    font-family: 'Courier New', monospace; /* Retro monospace font */
+}
