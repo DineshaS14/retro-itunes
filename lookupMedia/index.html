@@ -1,28 +1,46 @@
 <!-- lookupMedia/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declares the language of the document as English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Lookup</title>
+    <!-- Meta tags for proper page setup -->
+    <meta charset="UTF-8"> <!-- Ensures proper character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+
+    <title>Media Lookup</title> <!-- Sets the title of the page in the browser tab -->
+
+    <!-- Links the external CSS file for styling -->
     <link rel="stylesheet" href="../styles.css">
-    <script defer src="lookupMedia.js"></script>
+
+    <!-- Links the JavaScript file for interactive functionality -->
+    <script defer src="lookupMedia.js"></script> <!-- 'defer' ensures the script loads after the DOM is ready -->
 </head>
 <body>
-    <h1 class="glow-text">Media Search</h1>
+    <!-- Main header with retro glow effect -->
+    <h1 class="glow-text">Media Search</h1> <!-- Displays the main heading with a glowing text effect -->
+
+    <!-- Search container with input fields and buttons -->
     <div class="search-container">
-        <input type="text" id="searchBar" placeholder="Search media...">
+        <!-- Back button to return to the previous page -->
+        <button id="backButton" onclick="window.history.back()">Back</button> 
+        <!-- Search bar input field -->
+        <input type="text" id="searchBar" placeholder="Search media..."> <!-- Allows users to type their search query -->
+
+        <!-- Dropdown menu for selecting the type of media to search -->
         <select id="mediaType">
-            <option value="music" selected>Music</option>
+            <option value="music" selected>Music</option> <!-- Default selected option -->
             <option value="movie">Movie</option>
             <option value="podcast">Podcast</option>
             <option value="tvShow">TV Show</option>
         </select>
-        <button id="searchButton">Search</button>
+
+        <!-- Search button to trigger the media search functionality -->
+        <button id="searchButton">Search</button> 
     </div>
+
+    <!-- Results container for displaying search results -->
     <div class="results-container">
-        <h2>Results</h2>
-        <div id="results"></div>
+        <h2>Results</h2> <!-- Subheading for results section -->
+        <div id="results"></div> <!-- Empty div where search results will be dynamically displayed -->
     </div>
 </body>
 </html>

@@ -2,102 +2,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Itunes</title>
-    <!-- Link to external CSS file -->
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8"> <!-- Ensures proper character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for all devices -->
+    <title>Retro Itunes</title> <!-- Sets the title of the page in the browser tab -->
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation bar at the top -->
+    <nav>
+        <p>By: DineshaS14</p> <!-- Displays the author's name -->
+        <p><a href="/Contact/index.html">Contact Me</a></p> <!-- Contact page link -->
+    </nav>
+
     <!-- Main header with retro glow effect -->
     <h1 class="glow-text">Retro Itunes</h1>
-    
-    <!-- Grid container for layout -->
-    <div class="grid-container">
-        <!-- Search image links to the lookupMedia page -->
-        <div class="grid-item">
-            <a href="lookupMedia/index.html">
-        <img src="images/search.png" alt="Search" class="search-image">
-    </a>    
-        </div>
-  
-        <!-- Giphy iframe for second grid item -->
-        <div class="eq">
-            <div >
-                <iframe src="https://giphy.com/embed/vybWlRniCXzZC" width="480px"  frameBorder="0" allowFullScreen></iframe>
+
+    <!-- Main content wrapper -->
+    <div class="body-body">
+
+        <!-- Grid container for organizing items in a responsive grid -->
+        <div class="grid-container">
+
+            <!-- Grid Item 1: Search image with link to another page -->
+            <div class="grid-item">
+                <a href="lookupMedia/index.html"> <!-- Link to lookupMedia page -->
+                    <img src="images/search.png" alt="Search" class="search-image"> <!-- Search image -->
+                </a>    
             </div>
-        </div>
-        <!-- Retro ID Card in third grid item -->
-        <div class="grid-item">
-             <div class="id-card">
-                <img src="images/userProfilePic.webp" alt="User Profile" class="profile-pic">
-                <div class="user-info">
-                    <p class="username">Name: <span>DineshaS14</span></p>
-                    <p class="email">Email: <span>shairdinesha9@gmail.com</span></p>
-                    <p class="genre">Favorite Genre: <span>Alternative</span></p>
+  
+            <!-- Grid Item 2: Embedded Giphy iframe -->
+            <div class="eq">
+                <div>
+                    <!-- Displays a Giphy embed with specific dimensions -->
+                    <iframe src="https://giphy.com/embed/vybWlRniCXzZC" width="520px" height="300px" 
+                            class="img-simple" frameBorder="0" allowFullScreen></iframe>
                 </div>
             </div>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item-middle">
-            <img src="images/musictrend.png" alt="User Profile" class="img-simple">
-        <hr><hr><hr><hr><hr><hr><hr>
-        
-        </div>
-        <div class="grid-item-six">
-            <div>
-                <img src="images/cassette.png" alt="Eighth Cell" class="img-simple-2">
-                <img src="images/cassette2.png" alt="Eighth Cell" class="img-simple-2">
-                <img src="images/cassette3.png" alt="Eighth Cell" class="img-simple-2">
+
+            <!-- Grid Item 3: Retro ID card with user details -->
+            <div class="grid-item">
+                <div class="id-card"> <!-- Container for ID card -->
+                    <img src="images/userProfilePic.webp" alt="User Profile" class="profile-pic"> <!-- Profile picture -->
+                    <!-- User information displayed with spans -->
+                    <div class="user-info">
+                        <p class="username">Name: <span>DineshaS14</span></p>
+                        <p class="email">Email: <span>shairdinesha9@gmail.com</span></p>
+                        <p class="genre">Favorite Genre: <span>Alternative</span></p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="images/cassette2.png" alt="Eighth Cell" class="img-simple-2">
-                <img src="images/cassette3.png" alt="Eighth Cell" class="img-simple-2">
-                <a href="https://music.apple.com/us/playlist/90s-hits-essentials/pl.0d70b7c9be8e4e0b95ebbf5578aaf7a2">
-                <img src="images/cassette4.png" alt="Eighth Cell" class="img-simple-2">
+
+            <!-- Grid Item 4: Another Giphy iframe -->
+            <div class="grid-item">
+                <iframe src="https://giphy.com/embed/dCWdSHzQleAOwuC7wI" frameBorder="0" 
+                        class="img-simple" allowFullScreen></iframe>
+            </div>
+
+            <!-- Grid Item 5: Link to Music Map with image -->
+            <div class="grid-item-middle">
+                <a href="https://www.music-map.com/">
+                    <img src="images/musictrend.png" alt="Music Trends" class="img-simple">
                 </a>
+                <hr><hr><hr><hr><hr><hr><hr> <!-- Decorative horizontal lines -->
             </div>
-            <div>
-                <img src="images/cassette3.png" alt="Eighth Cell" class="img-simple-2">
-                <a href="https://music.apple.com/us/playlist/90s-hits-essentials/pl.0d70b7c9be8e4e0b95ebbf5578aaf7a2">
-                <img src="images/cassette4.png" alt="Eighth Cell" class="img-simple-2">
-            </a>
-                <img src="images/cassette2.png" alt="Eighth Cell" class="img-simple-2">
+
+            <!-- Grid Item 6: Multiple cassette images -->
+            <div class="grid-item-six">
+                <div>
+                    <!-- Displays rows of cassette images -->
+                    <img src="images/cassette.png" alt="Cassette" class="img-simple-2">
+                    <img src="images/cassette2.png" alt="Cassette" class="img-simple-2">
+                    <img src="images/cassette3.png" alt="Cassette" class="img-simple-2">
+                </div>
+                <div>
+                    <img src="images/cassette2.png" alt="Cassette" class="img-simple-2">
+                    <img src="images/cassette3.png" alt="Cassette" class="img-simple-2">
+                    <a href="https://music.apple.com/us/playlist/90s-hits-essentials/pl.0d70b7c9be8e4e0b95ebbf5578aaf7a2">
+                        <img src="images/cassette4.png" alt="90s Playlist" class="img-simple-2">
+                    </a>
+                </div>
+                <div>
+                    <img src="images/cassette3.png" alt="Cassette" class="img-simple-2">
+                    <a href="https://music.apple.com/us/playlist/90s-hits-essentials/pl.0d70b7c9be8e4e0b95ebbf5578aaf7a2">
+                        <img src="images/cassette4.png" alt="90s Playlist" class="img-simple-2">
+                    </a>
+                    <img src="images/cassette2.png" alt="Cassette" class="img-simple-2">
+                </div>
             </div>
-        </div>
-        <div class="grid-item-seven">
-            <div>
-            <img src="images/discoBall2.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall2.png" alt="Eighth Cell" class="img-simple-2">
+
+            <!-- Grid Item 7: Disco ball images -->
+            <div class="grid-item-seven">
+                <div>
+                    <img src="images/discoBall2.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall2.png" alt="Disco Ball" class="img-simple-2">
+                </div>
+                <div>
+                    <img src="images/discoBall.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall2.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall.png" alt="Disco Ball" class="img-simple-2">
+                </div>
+                <div>
+                    <img src="images/discoBall2.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall.png" alt="Disco Ball" class="img-simple-2">
+                    <img src="images/discoBall2.png" alt="Disco Ball" class="img-simple-2">
+                </div>
             </div>
-            <div>
-            <img src="images/discoBall.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall2.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall.png" alt="Eighth Cell" class="img-simple-2">
+
+            <!-- Grid Item 8: Multiple images displayed -->
+            <div class="grid-item">
+                <div class="eighth-grid-cell">
+                    <img src="images/eigthGridPic.png" alt="Eighth Cell">
+                    <img src="images/ninthGridPic.png" alt="Ninth Cell">
+                </div>
             </div>
-            <div>
-            <img src="images/discoBall2.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall.png" alt="Eighth Cell" class="img-simple-2">
-            <img src="images/discoBall2.png" alt="Eighth Cell" class="img-simple-2">
-            </div>
-            
-        </div>
-        <!-- Eighth grid cell with additional content -->
-        <div class="grid-item">
-            <div class="eighth-grid-cell">
-                <img src="images/eigthGridPic.png" alt="Eighth Cell">
+
+            <!-- Grid Item 9: Gifer embed -->
+            <div class="grid-item">
                 <iframe src="https://gifer.com/embed/WYdx" frameBorder="0" allowFullScreen></iframe>
             </div>
         </div>
-        <!-- Ninth grid cell with another image -->
-        <div class="grid-item">
-            <img src="images/ninthGridPic.png" alt="Ninth Cell">
-        </div>
     </div>
+
+    <!-- Horizontal rule separator -->
+    <hr>
+
+    <!-- Footer section -->
+    <footer>
+        &copy; Dinesha Shair &nbsp;  &nbsp; <!-- Copyright info -->
+        <a href="/Contact/index.html">Contact</a> &nbsp;  &nbsp; <!-- Contact page -->
+        <!-- Social media links -->
+        <a href="https://www.linkedin.com/in/dineshas14/"><i class="fa fa-linkedin"></i></a> &nbsp;  &nbsp;
+        <a href="https://github.com/DineshaS14/"><i class="fa fa-github"></i></a>
+    </footer>
 </body>
 </html>
-
-
-
-

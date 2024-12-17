@@ -1,125 +1,191 @@
-
+/* Body styling */
 body {
-    background: url('images/background.webp') center/cover no-repeat;
-    margin: 0; /* Remove default margins for full-screen background */
-    height: 100vh; /* Ensure the body takes up the full viewport height */
-    font-family: Arial, sans-serif; /* Optional: Set a font for the body */
+    background: url('images/background.webp') center/cover no-repeat; /* Sets a full-screen background image */
+    margin: 0; /* Removes default margin for a clean layout */
+    height: 100vh; /* Ensures body takes up full viewport height */
+    font-family: Arial, sans-serif; /* Sets font style for the entire page */
+    display: flex; /* Enables flexbox for body layout */
+    flex-direction: column; /* Stacks content vertically */
 }
 
+/* Wrapper for body content */
+.body-body {
+    display: flex; /* Enables flexbox for content alignment */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Aligns items horizontally */
+    justify-content: space-between; /* Spreads items evenly across the nav bar */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 20px; /* Adds padding for spacing */
+    background-color: #282828; /* Dark background color */
+    border-bottom: 2px solid #ff69b4; /* Adds a pink border at the bottom */
+}
+
+/* Navigation links */
+nav a {
+    padding: 10px 20px; /* Adds padding inside the link buttons */
+    background-color: #ff69b4; /* Pink background for links */
+    color: black; /* Black text color */
+    font-size: 1rem; /* Standard font size */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #00ffff; /* Changes background to cyan on hover */
+    color: #000; /* Changes text color to black */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glowing shadow */
+}
+
+/* Branding text inside the navigation */
+.nav-brand {
+    font-size: 1.5rem; /* Increases font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #ff69b4; /* Pink color for branding */
+}
+
+/* Glowing text for headings */
 .glow-text {
-    text-align: center;
-    font-size: 3rem;
-    color: black;
-    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    text-align: center; /* Centers text horizontally */
+    font-size: 3rem; /* Large font size */
+    color: black; /* Text color */
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glowing shadow */
 }
 
+/* Grid container for layout */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
-    gap: 10px; /* Spacing between divs */
-    width: 90%;
-    max-width: 1200px;
-    height: 90%;
-    margin: 0 auto; /* Center grid horizontally */
-    margin-top: 20px;
+    display: grid; /* Enables CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* Creates 3 equal rows */
+    gap: 10px; /* Adds spacing between grid items */
+    width: 90%; /* Container takes up 90% of available width */
+    max-width: 1200px; /* Limits container width */
+    height: auto; /* Adapts height dynamically */
 }
 
+/* Styling for each grid item */
 .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ff69b4; /* Border around each div */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex; /* Enables flexbox for content alignment */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    border: 2px solid #ff69b4; /* Pink border around grid items */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
 }
+
+/* Standard image styling with pink glow */
 .img-simple {
-    border: black solid ;
-    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+    border: black solid; /* Adds a black border */
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Adds pink glowing shadow */
 }
+
+/* Hover effect for glowing images */
 .img-simple:hover {
-    border: black solid ;
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Changes glow to cyan on hover */
 }
+
+/* Small circular images with glowing effects */
 .img-simple-2 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid black; /* Pink border */
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+    width: 80px; /* Sets width */
+    height: 80px; /* Sets height */
+    border-radius: 50%; /* Makes image circular */
+    border: 3px solid black; /* Adds a black border */
+    margin-bottom: 10px; /* Adds space below the image */
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glowing shadow */
 }
+
+/* Hover effect for circular images */
 .img-simple-2:hover {
-    width: 90px;
+    width: 90px; /* Increases size slightly on hover */
     height: 90px;
-    border-radius: 50%;
-    border: 3px solid black; /* Pink border */
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glowing shadow */
 }
+
+/* Container for horizontally aligned images */
 .eighth-grid-cell {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Aligns items horizontally */
 }
+
+/* Search image styling */
 .search-image {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Limit image width */
-    cursor: pointer;
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Limits image size */
+    cursor: pointer; /* Adds pointer cursor for interactivity */
+    border-radius: 5%; /* Adds slightly rounded corners */
+    border: solid #ff69b4; /* Pink border */
 }
-.search-image {
-    border-radius: 5%;
-    border: solid #ff69b4;
-}
-.eq {
-  
-    border-radius: 5%;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    border: solid #ff69b4;
-    background-color: black;
-}
+
+/* Styling for horizontal lines */
 hr {
-    background-color: black; /* Solid black color */
-    height: 2px; /* Thickness of the line */
-    border: none; /* Remove default border */
-    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+    background-color: black; /* Sets line color to black */
+    height: 2px; /* Sets line thickness */
+    border: none; /* Removes default border */
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Adds pink glowing effect */
 }
+
+/* Hover effect for horizontal lines */
 hr:hover {
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Changes glow to cyan */
 }
 
+/* Styling for user ID card */
 .id-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    border: 3px dashed #ff69b4; /* Dashed border for retro style */
-    background-color: #282828; /* Dark retro background */
-    padding: 15px;
-    color: #fff;
-    font-size: 0.8rem;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: left; /* Aligns text to the left */
+    border: 3px dashed #ff69b4; /* Pink dashed border */
+    background-color: #282828; /* Dark background */
+    padding: 15px; /* Adds inner spacing */
+    color: #fff; /* Sets text color to white */
+    font-size: 0.8rem; /* Reduces font size */
 }
 
+/* User profile picture */
 .profile-pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    border-radius: 50%; /* Circular image */
     border: 3px solid #ff69b4; /* Pink border */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds space below image */
 }
 
+/* User info text styling */
 .user-info p {
-    margin: 5px 0;
-    line-height: 1.2;
+    margin: 5px 0; /* Adds vertical spacing */
+    line-height: 1.2; /* Adjusts line spacing */
 }
 
 .user-info span {
-    color: #ff69b4; /* Pink text */
-    font-weight: bold;
+    color: #ff69b4; /* Pink text for highlights */
+    font-weight: bold; /* Makes text bold */
 }
 
+/* Footer styling */
+footer {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Aligns items horizontally */
+    justify-content: center; /* Centers footer content */
+    background-color: #282828; /* Dark background */
+    padding: 1%; /* Adds spacing */
+    border-top: solid #ff69b4; /* Pink top border */
+}
+
+/* Footer links */
+footer a {
+    color: #ff69b4; /* Pink color for footer links */
+}
+/* Search Media */
 /**/
 .search-container {
     display: flex;
@@ -209,3 +275,4 @@ hr:hover {
 .result strong {
     color: #ff69b4;
 }
+
