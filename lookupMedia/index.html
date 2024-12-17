@@ -1,0 +1,28 @@
+<!-- lookupMedia/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Lookup</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="lookupMedia.js"></script>
+</head>
+<body>
+    <h1 class="glow-text">Media Search</h1>
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search media...">
+        <select id="mediaType">
+            <option value="music" selected>Music</option>
+            <option value="movie">Movie</option>
+            <option value="podcast">Podcast</option>
+            <option value="tvShow">TV Show</option>
+        </select>
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="results-container">
+        <h2>Results</h2>
+        <div id="results"></div>
+    </div>
+</body>
+</html>

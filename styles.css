@@ -1,11 +1,16 @@
-/* Apply a background image to the body */
+
 body {
     background: url('images/background.webp') center/cover no-repeat;
     margin: 0; /* Remove default margins for full-screen background */
     height: 100vh; /* Ensure the body takes up the full viewport height */
     font-family: Arial, sans-serif; /* Optional: Set a font for the body */
-    align-items: center;
-    justify-content: center;
+}
+
+.glow-text {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
 }
 
 .grid-container {
@@ -13,64 +18,194 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(3, 1fr);    /* 3 rows */
     gap: 10px; /* Spacing between divs */
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    margin-top: 50px;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    margin: 0 auto; /* Center grid horizontally */
+    margin-top: 20px;
+}
+
+.grid-item {
+    display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #ff69b4; /* Border around each div */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 }
-
-/* Style for each grid item */
-.grid-item {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ccc; /* Border around each div */
-    background-color: #000; /* Default background color */
+.img-simple {
+    border: black solid ;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
 }
-
+.img-simple:hover {
+    border: black solid ;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+}
+.img-simple-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid black; /* Pink border */
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+}
+.img-simple-2:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid black; /* Pink border */
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+}
 .eighth-grid-cell {
     display: flex;
     flex-direction: row;
 }
+.search-image {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limit image width */
+    cursor: pointer;
+}
+.search-image {
+    border-radius: 5%;
+    border: solid #ff69b4;
+}
+.eq {
+  
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: solid #ff69b4;
+    background-color: black;
+}
+hr {
+    background-color: black; /* Solid black color */
+    height: 2px; /* Thickness of the line */
+    border: none; /* Remove default border */
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+}
+hr:hover {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+}
 
-/* Retro ID Card */
 .id-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
-    border: 3px dashed #fe5dc4; /* Dashed border for retro style */
+    border: 3px dashed #ff69b4; /* Dashed border for retro style */
     background-color: #282828; /* Dark retro background */
     padding: 15px;
     color: #fff;
     font-size: 0.8rem;
 }
 
-/* Profile picture */
 .profile-pic {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Circular profile image */
-    border: 3px solid #fe5dc4; /* Green border for the profile picture */
+    border-radius: 50%;
+    border: 3px solid #ff69b4; /* Pink border */
     margin-bottom: 10px;
 }
 
-/* User info styling */
 .user-info p {
     margin: 5px 0;
     line-height: 1.2;
 }
 
 .user-info span {
-    color: #e96bc5; /* Highlighted green text */
+    color: #ff69b4; /* Pink text */
     font-weight: bold;
 }
 
-/* Username, email, and genre styling */
-.username,
-.email,
-.genre {
-    font-family: 'Courier New', monospace; /* Retro monospace font */
+/**/
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-container input,
+.search-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #00ffff;
+    color: #000;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+.results-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.results-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff69b4;
+    text-shadow: 0 0 5px #ff69b4;
+}
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.result {
+    background-color: #000;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+}
+.result:hover {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+}
+
+.result img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: #000 solid;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Pink glow effect */
+}
+.result img:hover {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Cyan glow effect */
+}
+
+.result p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.result strong {
+    color: #ff69b4;
 }
